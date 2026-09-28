@@ -28,12 +28,17 @@ PRESETS: dict[str, str] = {
     "triage": "triage_questions",
     "model_router": "router_questions",
     "email": "email_questions",
+    "autofleet": "autofleet_questions",
 }
 
 # `router` is what the CLI calls this preset, and it is the word a caller reaches for first;
 # `model_router` stayed because clients already have it in their prompts. Both name one preset,
 # and the canonical key is what comes back in the result.
-PRESET_ALIASES: dict[str, str] = {"router": "model_router"}
+PRESET_ALIASES: dict[str, str] = {
+    "router": "model_router",
+    "rover": "autofleet",
+    "autofleet_m2m": "autofleet",
+}
 
 
 def get_available_presets() -> dict[str, dict[str, Any]]:

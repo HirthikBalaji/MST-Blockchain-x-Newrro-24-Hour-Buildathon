@@ -5,14 +5,15 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "laya"
 version = "0.3.21"
-description = "Fast, non-autoregressive System 1 decision engine with calibrated probabilities"
+description = "AutoFleet-M2M AI Subsystem: Fast, non-autoregressive System 1 decision engine with calibrated probabilities for autonomous robotics & MST Blockchain M2M commerce"
 readme = "README.md"
 requires-python = ">=3.10"
 license = { text = "Apache-2.0" }
 authors = [
-    { name = "Convai Innovations" }
+    { name = "Hirthik Balaji", email = "hirthikbalaji2006@gmail.com" },
+    { name = "Anandhappriya", email = "anandhappriya@gmail.com" },
 ]
-keywords = ["decision-model", "rlcd", "calibration", "system-one", "routing", "guardrails", "moderation", "triage"]
+keywords = ["decision-model", "rlcd", "calibration", "system-one", "routing", "guardrails", "robotics", "mst-blockchain", "depin", "mcp"]
 classifiers = [
     "Development Status :: 4 - Beta",
     "Intended Audience :: Developers",

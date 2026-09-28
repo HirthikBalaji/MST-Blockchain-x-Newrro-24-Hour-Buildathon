@@ -5,6 +5,7 @@ from .hooks import AsyncHook, BaseHook, Hook, PredictContext, PredictHook
 from .lang import analyse as detect_language
 from .lang import detect_script, is_english
 from .presets import (
+    autofleet_questions,
     email_questions,
     guard_questions,
     moderation_questions,

@@ -208,3 +208,34 @@ def router_questions() -> Dict:
             "instructions": "Does `request` involve money, legal, medical or safety consequences?",
         },
     }
+
+
+def autofleet_questions() -> Dict:
+    """Preset questions for AutoFleet-M2M autonomous rover reflex actuation, hazard scoring, and transaction gating."""
+    return {
+        "physical_action": {
+            "type": "choice",
+            "instructions": "Determine immediate physical reflex action for `telemetry`.",
+            "criteria": {
+                "extinguish": "flame detected or critical combustible/toxic gas concentrations exceed safety threshold",
+                "avoid_collision": "obstacle closer than 15 cm ahead or collision hazard detected",
+                "dock_for_refill": "battery critically low (<11.2V) or suppressant tank depleted near authorized depot",
+                "patrol_sweep": "all sensory readings nominal; proceed with autonomous route",
+            },
+        },
+        "hazard_severity": {
+            "type": "score",
+            "instructions": "Assess overall environmental danger rating from `telemetry`.",
+            "criteria": [
+                "nominal: all parameters within safe limits",
+                "mild_anomaly: minor thermal or environmental elevation",
+                "moderate_danger: elevated gas or obstacle proximity requiring caution",
+                "critical_hazard: active flame or toxic hazard requiring emergency suppression",
+            ],
+        },
+        "authorize_m2m_tx": {
+            "type": "noul",
+            "instructions": "Does `telemetry` warrant authorizing an on-chain MSTC micro-payment for resource replenishment?",
+        },
+    }
+
