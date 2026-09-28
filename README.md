@@ -1,21 +1,3 @@
----
-title: "MST Blockchain x Newrro 24-Hour Buildathon"
-source: "https://unstop.com/hackathons/mst-blockchain-newrro-bmsc-24-hour-buildathon-bms-college-of-engineering-1750981"
-author:
-  - "Hirthik Balaji (hirthikbalaji2006@gmail.com)"
-  - "Anandhappriya (anandhappriya@gmail.com)"
-published:
-created: 2026-09-28
-description: "Find out the best MST Blockchain x Newrro 24-Hour Buildathon that match your interests. Prove your mettle and win exciting prizes like job opportunities and ..."
-tags:
-  - "clippings"
-  - "ai"
-  - "blockchain"
-  - "depin"
-  - "robotics"
-  - "hackathon"
----
-
 # MST Blockchain x Newrro 24-Hour Buildathon
 
 > **AutoFleet-M2M**: Autonomous Sentinel Rover with Agentic AI, LAYA On-Device Decision Engine & Decentralized Machine-to-Machine Commerce on MST Blockchain.
